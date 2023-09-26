@@ -45,7 +45,6 @@ a {
     color: #222;
     font-size: 32px;
     font-weight: 700;
-    min-width: 227px;
 }
 .top__text3 {
     color: #F16D7F;
@@ -226,4 +225,99 @@ a {
     color: rgba(242, 99, 118, 1);
     font-size: 16px;
     font-weight: 400;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) { 
+    .top{
+        display: flex;
+        align-items: center;
+        background-color: #F1E4E6;
+        max-width: 768px;
+        margin: auto;
+    }
+    .top__content{
+        display: flex;
+        gap: 16px;
+        padding-left: 39px;
+    }
+    .top__image {
+        width: 50%;
+    }
+    .top__text {
+        display: flex;
+        flex-direction: column;
+    }
+    .top__textroup{
+        display: flex;
+    }
+    .top__text1 {
+        color: #222;
+        font-size: 44px;
+        font-weight: 900;
+    }
+    .top__text2 {
+        color: #222;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .top__text3 {
+        color: #F16D7F;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .center {
+        padding-left: calc(50% - 512px);
+        padding-right: calc(50% - 512px);
+    }
+
+    .header {
+        min-height: 75px;
+        background: #222222;
+        display: flex;
+        justify-content: space-between;
+        max-width: 768px;
+        min-height: 75px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .header__left {
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+    }
+
+    .header__right {
+        display: flex;
+        align-items: center;
+        padding-right: 32px;
+    }
+
+    .sale {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 231px);
+        padding-top: 65px;
+        padding-bottom: 96px;
+        max-width: 768px;
+        min-width: 500px;
+        min-height: 75px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .shop {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 360px);
+        padding-top: 65px;
+        max-width: 1600px;
+        min-width: 500px;
+        min-height: 75px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
 }
